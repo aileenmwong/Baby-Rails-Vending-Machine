@@ -1,2 +1,9 @@
-<h1>Kinds#index</h1>
-<p>Find me in app/views/kinds/index.html.erb</p>
+<h1 id="vending-head2">What kinds of snacks are in the machine?</h1>
+<div id="vending-text">
+<% @kinds.each do |kind| %>
+<ul>
+  <li><%= kind.snack_type %></li>
+</ul>
+<% end %>
+<%= link_to 'Back', vendings_path %>
+</div>

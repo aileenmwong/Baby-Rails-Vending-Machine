@@ -3,5 +3,6 @@ class KindsController < ApplicationController
   end
 
   def index
+    @kinds = Kind.all
   end
 end

@@ -13,3 +13,44 @@
  *= require_tree .
  *= require_self
  */
+
+body {
+  background-image: url("./vending-machine");
+}
+
+#vending-text {
+  background-color: rgba(255, 255, 255, 0.8);
+  width: 460px;
+  margin: auto;
+  font-family: 'Permanent Marker', cursive;
+}
+
+#vending-head {
+  color: red;
+  text-shadow:
+   3px 3px 0 #000,
+ -1px -1px 0 #000,
+  1px -1px 0 #000,
+  -1px 1px 0 #000,
+   1px 1px 0 #000;
+  font-family: 'Nosifer', cursive;
+  font-size: 80px;
+  text-align: center;
+}
+
+#vending-head2 {
+  color: red;
+  text-shadow:
+   3px 3px 0 #000,
+ -1px -1px 0 #000,
+  1px -1px 0 #000,
+  -1px 1px 0 #000,
+   1px 1px 0 #000;
+  font-family: 'Nosifer', cursive;
+  font-size: 30px;
+  text-align: center;
+}
+
+/*td {
+  font-family: 'Permanent Marker', cursive;
+}*/
