@@ -1,3 +1,4 @@
+<div id="vending-text">
 <%= form_with(model: vending, local: true) do |form| %>
   <% if vending.errors.any? %>
     <div id="error_explanation">
@@ -35,3 +36,4 @@
     <%= form.submit %>
   </div>
 <% end %>
+</div>
