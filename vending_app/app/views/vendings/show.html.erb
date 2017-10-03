@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Snack:</strong>
+  <%= @vending.snack %>
+</p>
+
+<p>
+  <strong>Code:</strong>
+  <%= @vending.code %>
+</p>
+
+<p>
+  <strong>Price:</strong>
+  <%= @vending.price %>
+</p>
+
+<p>
+  <strong>Kind:</strong>
+  <%= @vending.kind_id %>
+</p>
+
+<%= link_to 'Edit', edit_vending_path(@vending) %> |
+<%= link_to 'Back', vendings_path %>

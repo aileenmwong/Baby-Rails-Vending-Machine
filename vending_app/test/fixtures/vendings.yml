@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  snack: MyString
+  code: MyString
+  price: MyString
+  kindid: 1
+
+two:
+  snack: MyString
+  code: MyString
+  price: MyString
+  kindid: 1

@@ -1,0 +1,37 @@
+<%= form_with(model: vending, local: true) do |form| %>
+  <% if vending.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(vending.errors.count, "error") %> prohibited this vending from being saved:</h2>
+
+      <ul>
+      <% vending.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :snack %>
+    <%= form.text_field :snack, id: :vending_snack %>
+  </div>
+
+  <div class="field">
+    <%= form.label :code %>
+    <%= form.text_field :code, id: :vending_code %>
+  </div>
+
+  <div class="field">
+    <%= form.label :price %>
+    <%= form.text_field :price, id: :vending_price %>
+  </div>
+
+  <div class="field">
+    <%= form.label :kind_id %>
+    <%= form.number_field :kind_id, id: :vending_kind_id %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>
